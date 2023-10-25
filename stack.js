@@ -5,4 +5,8 @@ class Stack {
     this.items = []
   }
   
+  push(element) {
+    this.items[this.count] = element
+    this.count++
+  }
 }
