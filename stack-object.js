@@ -38,4 +38,22 @@ class Stack {
     /** Devolvendo o elemento que foi do topo da pilha removido */
     return result
   }
+  
+  /**
+  * Método responsável por devolver o item que está no topo da pilha.
+  * @returns {*} O elemento que está no topo da pilha, ou undefined se a pilha estiver vazia.
+  */
+  peek() {
+    /** Verificando se a pilha está vazia */
+    if (this.isEmpty()) return undefined
+    
+    /** Devolvendo o elemento do topo da pilha */
+    return this.items[this.count - 1]
+  }
+  
+  clear() {
+    while (!this.isEmpty()) {
+      this.pop()
+    }
+  }
 }
