@@ -56,4 +56,24 @@ class Stack {
       this.pop()
     }
   }
+  
+  /**
+  * Método responsável por exibir o conteúdo da pilha.
+  * Retorna uma string representando o conteúdo da pilha.
+  * @returns {string} Uma string representando o conteúdo da pilha.
+  */
+  toString() {
+    /** Verificando se a pilha está vazia, se estiver, devolve uma string vazia */
+    if (this.isEmpty()) return ''
+    
+    /** Armazenando o valor que está no topo da pilha */
+    let objString = `${this.items[0]}`
+    
+    /** Percorre todos os itens na pilha e adiciona o item à string 'objString', separado por vírgula */
+    for (let i = 0; i < this.count; i++) {
+      objString = `${objString}, ${this.items[i]}`
+    }
+    
+    return objString
+  }
 }
