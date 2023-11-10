@@ -8,7 +8,7 @@ A Estrutura de Dados **Pilha** (_stack_) apresenta algumas semelhanças com os A
 
 <p>
 
-Uma pilha é uma coleção ordenada de itens que obedece ao princípio _Last In First Out_ - **LIFO**, em tradução livre, o último a entrar é o primeiro a sair. Para entender melhor, imagine uma pilha de livros.
+Uma pilha é uma coleção ordenada de itens que obedece ao princípio _Last In First Out_ ‒ LIFO, em tradução livre, o último a entrar é o primeiro a sair. Ou seja, os elementos não podem ser adicionados ou removidos fora de ordem. Para entender melhor, imagine uma pilha de livros.
 
 </p>
 
