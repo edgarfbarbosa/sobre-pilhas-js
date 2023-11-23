@@ -1,8 +1,10 @@
 # Referência para entender Pilhas com JavaScript
 
+## O que é a Estrutura de Dados Pilha?
+
 <p>
 
-A Estrutura de Dados **Pilha** (_stack_) apresenta algumas semelhanças com os Arrays, porém, ela nos oferece mais controle sobre a adição e remoção dos elementos.
+A Estrutura de Dados **Pilha** (_Stack_) apresenta algumas semelhanças com os Arrays, porém, ela nos oferece mais controle sobre a adição e remoção dos elementos.
 
 </p>
 
@@ -12,7 +14,7 @@ Uma pilha é uma coleção ordenada de itens que obedece ao princípio LIFO (_La
 
 </p>
 
-## Métodos disponíveis em uma pilha (_stack_)
+## Métodos disponíveis em uma Pilha (_Stack_)
 
 ### Método push()
 
@@ -71,5 +73,39 @@ O método `clear()` é responsável pela remoção de todos os elementos da pilh
 ```
 clear() {
   this.items = []
+}
+```
+
+## Exemplo Prático de uma Pilha em JavaScript usando Arrays
+
+```
+class Pilha {
+  constructor() {
+    this.items = []
+  }
+
+  push(element) {
+    this.items.push(element)
+  }
+
+  pop() {
+    return this.items.pop()
+  }
+
+  peek() {
+    return this.items[this.items.length - 1]
+  }
+
+  isEmpty() {
+    return this.items.length === 0
+  }
+
+  size() {
+    return this.items.length
+  }
+
+  clear() {
+    this.items = []
+  }
 }
 ```
