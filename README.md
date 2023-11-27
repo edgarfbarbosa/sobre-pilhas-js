@@ -14,98 +14,120 @@ Uma pilha é uma coleção ordenada de itens que obedece ao princípio LIFO (_La
 
 </p>
 
-## Métodos disponíveis em uma Pilha (_Stack_)
+## Criando uma Pilha usando Arrays
 
-### Método push()
+<p>
+
+Segue abaixo nossa classe construtora e os métodos disponíveis em uma pilha.
+
+```
+class Pilha {
+  constructor() {
+    this.itens = []
+  }
+}
+```
+
+</p>
+
+### Métodos disponíveis em uma Pilha (_Stack_)
+
+#### Método push()
 
 O método `push()` é responsável pela adição de um ou mais elementos no topo da pilha.
 
 ```
-push() {
-  this.items.push()
+push(elemento) {
+  this.itens.push(elemento)
 }
 ```
 
-### Método pop()
+#### Método pop()
 
 O método `pop()` remove e devolve o elemento que está no topo da pilha.
 
 ```
 pop() {
-  return this.items.pop()
+  return this.itens.pop()
 }
 ```
 
-### Método peek()
+#### Método peek()
 
 O método `peek()` devolve como informação o elemento que está no topo da pilha.
 
 ```
 peek() {
-  return this.items[this.items.length - 1]
+  return this.itens[this.itens.length - 1]
 }
 ```
 
-### Método isEmpty()
+#### Método isEmpty()
 
 O método `isEmpty()` é responsável por retornar `true` se a pilha estiver vazia e `false` caso o tamanho da pilha seja maior que 0.
 
 ```
 isEmpty() {
-  return this.items.length === 0
+  return this.itens.length === 0
 }
 ```
 
-### Método size()
+#### Método size()
 
 O método `size()` devolve o número de elementos contidos na pilha.
 
 ```
 size() {
-  return this.items.length
+  return this.itens.length
 }
 ```
 
-### Método clear()
+#### Método clear()
 
 O método `clear()` é responsável pela remoção de todos os elementos da pilha.
 
 ```
 clear() {
-  this.items = []
+  this.itens = []
 }
 ```
 
 ## Exemplo Prático de uma Pilha em JavaScript usando Arrays
 
+<p>
+
+Conhecendo nossa classe construtora e os métodos disponíveis em uma pilha (_stack_), a classe `Pilha` foi construída da seguinte maneira:
+
+</p>
+
 ```
 class Pilha {
   constructor() {
-    this.items = []
+    this.itens = []
   }
 
-  push(element) {
-    this.items.push(element)
+  push(elemento) {
+    this.itens.push(elemento)
   }
 
   pop() {
-    return this.items.pop()
+    return this.itens.pop()
   }
 
   peek() {
-    return this.items[this.items.length - 1]
+    return this.itens[this.itens.length - 1]
   }
 
   isEmpty() {
-    return this.items.length === 0
+    return this.itens.length === 0
   }
 
   size() {
-    return this.items.length
+    return this.itens.length
   }
 
   clear() {
-    this.items = []
+    this.itens = []
   }
 }
 ```
